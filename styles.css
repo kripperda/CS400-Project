@@ -109,6 +109,10 @@ section {
 }
 
 /* Video Section */
+.product-pitch img{
+    width: 400px;
+    height: 300px;
+}
 
 /* Footer */
 .footer {
