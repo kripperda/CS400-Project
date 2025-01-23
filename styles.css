@@ -15,6 +15,10 @@ body{
     padding: 0 20px;
 }
 
+.flex.jc-sb {
+    justify-content: space-between;
+}
+
 /* Header Section*/
 .header{
     background: linear-gradient(to right, red, blue);
@@ -33,6 +37,38 @@ body{
     font-size: 1.2rem;
     margin: 1rem 0;
 }
+.header {
+    nav {
+        padding 1.0rem 1.5rem;
+        width: 100%;
+    }
+    & .links {
+        a {
+            position relative;
+            font-size: var(--font-sm);
+            color: red;
+            transition: color 300ms ease-in-out;
+
+            &:hover {
+                color: var(--Blue);
+            }
+        }
+    }
+}
+
+.header .menu>span {
+    /*style for each span element in the menu */
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: var(--darkBlue);
+
+    &:not(:last-child) {
+        margin-bottom: 3px;
+    }
+}
+
+
 
 /* Button from header to features */
 .cta-button{
@@ -61,6 +97,14 @@ body{
     height: auto;
     display: block;
     margin-top: 5.0rem;
+}
+
+.logo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
 }
 
 /* Styling Sections*/
@@ -120,4 +164,11 @@ section {
     color: white;
     text-align: center;
     padding: 1 rem 0;
+}
+
+.personas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
