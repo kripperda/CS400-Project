@@ -5,34 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Play It Forward</title>
         <!-- Link to CSS file -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="index_styles.css">
     </head>
     <body>
+
         <!-- Header Section -->
-         <header class="header">
+        <header class="header">
             <nav class="flex jc-sb ai-c">
-            <div class = "container"></div>
-                
-                <a class="menu" href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-    
-                <div class="header links">
-                    <a href="#home">Home</a>
-                    <a href="#features">Features</a>
-                    <a href="#vision">Vision</a>
-                    <a href="#team">Team</a>
-                    <a href= "design_artifacts.html" >Design Artifacts</a>
+            <div class = "container">
             
                 <h1> Play It Forward </h1>
                 <!-- Slogan ideas: "Sharing the Joy of Play, One Toy at a Time" or "Reduce, Reuse, Playtime"-->
                 <p class = "slogan">Sharing the Joy of Play, One Toy at a Time</p>
                 <!-- Button linked to take user to the features and benefits of Play It Forward -->
-                <a href= "#features" class="cta-button"> Learn More </a>
+                <a href= "design_artifacts.html" class="cta-button"> Learn More </a>
             </div>
          </header>
+
+         <!-- Menu Bar -->
+         <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="design_artifacts.html">Design Artifacts</a>
+            <a href="#personas">Perspective Users</a>
+            <a href="#interviews">Interviews</a>
+            <a href="#userstories">User Stories</a>
+            <a href="#scenarios">Scenarios</a>
+            <a href="#features">Features</a>
+        </nav>
 
         <!-- About Section -->
          <section id = "about" class = "about">
@@ -90,12 +89,25 @@
         <!-- Vision Statement -->
          <section id = "vision" class = "vision">
             <div class = "container">
-                <h2>Product Vision</h2>
+                <h2>Vision Statement</h2>
                 <p>Play It Forward seeks to make sure all children have the appropriate toys to foster learning throughout childhood. Play It Forward seeks to unite 
                     those wishing to get rid of toys their children have grown out of with those seeking to find new toys for their younger children to play with. 
                     All toys listed are in usable condition with plenty of life and love left in them. Play It Forward focuses on toys played with and loved by younger 
                     ages with a primary focus on learning-type toys to provide educational opportunities for those who may not have as many toys intended for learning. 
                     Play It Forward also will lean on non-profit organizations - as donatees and donators - to help fill the gaps of toys needing to be properly placed.
+                </p>
+            </div>
+         </section>
+
+         <!-- Here from prospective customers -->
+         <section id = "customers" class = "customers">
+            <div class = "container">
+                <h2> Learn More About Our Prospective Customers!</h2>
+                <!-- Button linked to design artifacts-->
+                <a href= "design_artifacts.html" class="cta-body-button"> Click Here To Learn More! </a>
+                <p>Play It Forward is designed for parents, grandparents, caregivers, teachers, non-profits, and everyone in between who is looking for toys to
+                    create new memories with or to give to others to create those memories. Please see our design artifacts page to learn more about our future
+                    clients and the features of our application.
                 </p>
             </div>
          </section>
@@ -136,17 +148,17 @@
                 <h2> Product Pitch </h2>
                 <!-- Image for video preview-->
                  <img src="images/present.png" alt ="Video Presentation">
-                <!-- Link video here -->
-                 <p><a href = "https://video.bellarmine.edu/media/t/1_1wbwbmxh" target="blank">Click here</a> to learn more about the product!</p>
+                <!-- Video Link -->
+                 <a href= "https://video.bellarmine.edu/media/t/1_1wbwbmxh" class="cta-body-button"> Watch Our Pitch </a>
             </div>
          </section>
 
         <!-- Footer Section -->
-         <footer class = "footer">
+         <section id =  "footer" class="footer">
             <!-- Link to JavaScript if we chose to add it-->
             <div class = "container">
                 <p>Play It Forward: Kory Ripperda and Megan Cole</p>
             </div>
-         </footer>
+         </section>
     </body>
 </html>
