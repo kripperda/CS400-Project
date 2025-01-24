@@ -1,63 +1,144 @@
 <!DOCTYPE html>
 <html lang = 'en'>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Design Artifacts</title>
-        <!-- Link to CSS file -->
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!-- Header Section -->
-         <header class="header">
-            <nav class="flex jc-sb ai-c">
-            <div class = "container"></div>
-                
-                <a class="menu" href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-    
-                <div class="header links">
-                    <a href="index.html">Home</a>
-                    <a href= "design_artifacts.html" >Design Artifacts</a>
-                    <a href="#interviews">Interviews</a>
-                    <a href="#personas">Personas</a>
-                    <a href="#userstories">User Stories</a>
-                    <a href="#scenarios">Scenarios</a>
-                    <a href="#features">Features</a>
-                </div>
-
-                <h1> Play It Forward </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Artifacts</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="design_artifacts_styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+        <header class="header">
+            <h1> Play It Forward </h1>
                 <!-- Slogan ideas: "Sharing the Joy of Play, One Toy at a Time" or "Reduce, Reuse, Playtime"-->
                 <p class = "slogan">Sharing the Joy of Play, One Toy at a Time</p>
                 <!-- Button linked to take user to the features and benefits of Play It Forward -->
-                <a href= "#features" class="cta-button"> Learn More </a>
-            </div>
+                <a href= "index.html" class="cta-button"> Return Home </a>
          </header>
+
+         <!-- Menu Bar -->
+         <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="design_artifacts.html">Design Artifacts</a>
+            <a href="#personas">Perspective Users</a>
+            <a href="#interviews">Interviews</a>
+            <a href="#userstories">User Stories</a>
+            <a href="#scenarios">Scenarios</a>
+            <a href="#features">Features</a>
+        </nav>
+
+          <!-- About Section -->
+         <section id = "about" class = "about">
+            <div class = "container">
+                <div class = "about-grid">
+                    <div class = "about-info">
+                        <h2> About Our Product </h2>
+                        <!-- Design Artifacts Overview -->
+                        <p class = "description"> 
+                            Design Artifacts play an important part of designing software products that best fit the needs of our users. 
+                            Please watch our video for an overview of the important design artifacts discussed on this page.
+                        </p>
+                        <!-- Video Link -->
+                        <!-- <a href= "LINK HERE" class="cta-body-button"> Watch Our Artifacts Overview </a>  -->
+                    </div>
+                    <div class = "logo">
+                        <img src = "images/logo.jpeg" alt="Play It Forward Logo">
+                    </div>
+                </div>
+            </div>
+         </section>
+
+          <!-- Personas Section -->
+        <section id = "personas" class = "personas">
+            <div class="container">
+                <h2>Personas</h2>
+                <div class = "personas-grid">
+                    <!-- Person 1: Bronwyn-->
+                    <div class="persona-item"> 
+                        <img src="images/brownyn.jpg" alt="Bronwyn Picture">
+                        <h3> <a href= personas/_persona1.html>Meet Bronwyn</a></h3>
+                            <p> 
+                                Age 39 <br>
+                                South African <br>
+                                Stay at home mom <br>
+                                Two children ages 6 and 8 <br>
+                                PTO Member <br>
+                                Education Paraprofessional<br>
+                            </p>
+                            <h6>Photo by Yan Krukau: https://www.pexels.com/photo/boy-standing-in-front-of-a-blackboard-beside-a-woman-seated-on-a-bean-bag-8613090/</h6>
+                    </div> 
+                    <!-- Person 2: Shannon -->
+                    <div class = "persona-item" >
+                        <img src="images/shannon.jpg" alt="Shannon Picture">
+                        <h3> <a href= personas/_persona2.html>Meet Shannon</a>  </h3>
+                        <p> 
+                            Age 37 <br>
+                            Missouri <br>
+                            Working mother <br>
+                            Three children ages 3, 6, and 7 <br>
+                            Help desk manager <br>
+                            Girl Scounts volunteer <br>
+                        </p>
+                        <h6>Photo by Ketut Subiyanto: https://www.pexels.com/photo/happy-mother-working-from-home-and-little-daughter-hugging-mom-4474045/</h6>
+
+                    </div>
+                    <!-- Person 3: Tracy -->
+                    <div class = "persona-item" >
+                        <img src="images/tracy.jpg" alt="Tracy Picture">
+                        <h3> <a href= personas/_persona3.html>Meet Tracy</a>  </h3>
+                        <p> 
+                            Undisclosed Age<br>
+                            Missouri <br>
+                            Pediatric nurse <br>
+                            Grown children<br>
+                            Soon to be grandmother <br>
+                            <br>
+                            <br>
+                        </p>
+                        <h6>Photo by Los Muertos Crew: https://www.pexels.com/photo/doctor-standing-next-to-a-little-girl-in-a-pediatricians-office-8460035/</h6>
+                    </div>
+                    <!-- Person 4: Jack-->
+                    <div class = "persona-item" >
+                        <img src="images/jack.jpg" alt="Jack Picture">
+                        <h3> <a href= personas/_persona4.html>Meet Jack</a>  </h3>
+                        <p> 
+                            Age 22 <br>
+                            Kentucky <br>
+                            Kindergarten teacher <br>
+                            Elementary education graduate<br>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <h6>Photo by  Anastasia  Shuraeva: https://www.pexels.com/photo/children-sitting-in-the-classrrom-8466775/</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Interviews Section -->
          <section id = "interviews" class = "interviews">
-            <div class="logo2">
-                <img src = "images/logo.jpeg" alt="Play It Forward Logo" width="500" height="400">
-            </div>
             <div class = "container">
-                <div class = "about-grid">
+                <div class = "interviews-grid">
                     <div class = "about-info">
                         <h2> Interviews </h2>
                         <div class = "features-grid">
                             <div class="features-item"> 
-                                <h3> <a href= interviews/_interview1.html>Interview 1</a>  </h3>
+                                <img src="images/brownyn.jpg" alt="Bronwyn Picture">
+                                <h3> <a href= interviews/_interview1.html>Bronwyn</a>  </h3>
                             </div> 
                             <div class = "features-item" >
-                                <h3> <a href= interviews/_interview2.html>Interview 2</a>  </h3>
+                                <img src="images/shannon.jpg" alt="Shannon Picture">
+                                <h3> <a href= interviews/_interview2.html>Shannon</a>  </h3>
                             </div>
                             <div class = "features-item" >
-                                <h3> <a href= interviews/_interview3.html>Interview 3</a>  </h3>
+                                <img src="images/tracy.jpg" alt="Tracy Picture">
+                                <h3> <a href= interviews/_interview3.html>Tracy</a>  </h3>
                             </div>
                             <div class = "features-item" >
-                                <h3> <a href= interviews/_interview4.html>Interview 4</a>  </h3>
+                                <img src="images/jack.jpg" alt="Jack Picture">
+                                <h3> <a href= interviews/_interview4.html>Jack</a>  </h3>
                             </div>
                         </div>
                     </div>
@@ -67,49 +148,27 @@
             </div>
          </section>
 
-        <!-- Personas Section -->
-        <section id = "personas" class = "personas">
-            <div class="container">
-                <h2>Personas</h2>
+         <!-- User Stories Section -->
+        <section id = "userstories" class = "userstories">
+            <div class = "container">
+                <h2>User Stories</h2>
                 <div class = "features-grid">
                     <div class="features-item"> 
-                        <h3> <a href= personas/_persona1.html>Bronwyn</a>  </h3>
-                            <p> Age 39 <br>
-                                South African <br>
-                                Stay at home mom <br>
-                                Two children ages 6 and 8 <br>
-                                PTO Member <br>
-                                Teacher helper <br>
-                            </p>
+                        <img src="images/brownyn.jpg" alt="Bronwyn Picture">
+                        <h3> <a href= user_stories/_userstory1.html>Bronwyn</a>  </h3>
                     </div> 
-                    <div class = "features-item" >
-                        <h3> <a href= personas/_persona2.html>Shannon</a>  </h3>
-                        <p> Age 37 <br>
-                            Missouri <br>
-                            Working mother <br>
-                            Three children ages 3, 6, and 7 <br>
-                            Help desk manager <br>
-                            Girl Scounts volunteer <br>
-                        </p>
-                    </div>
-                    <div class = "features-item" >
-                        <h3> <a href= personas/_persona3.html>Tracy</a>  </h3>
-                        <p> Age undisclosed <br>
-                            Missouri <br>
-                            Pediatric nurse <br>
-                            Grown children<br>
-                            Soon to be grandmother <br>
-                        </p>
-                    </div>
-                    <div class = "features-item" >
-                        <h3> <a href= personas/_persona4.html>Jack</a>  </h3>
-                        <p> Age 22 <br>
-                            Kentucky <br>
-                            Kindergarten teacher <br>
-                            Elementary education graduate<br>
-                        </p>
-                    </div>
-                </div>
+                    <div class="features-item"> 
+                        <img src="images/shannon.jpg" alt="Shannon Picture">
+                        <h3> <a href= user_stories/_userstory2.html>Shannon</a>  </h3>
+                    </div> 
+                    <div class="features-item"> 
+                        <img src="images/tracy.jpg" alt="Tracy Picture">
+                        <h3> <a href= user_stories/_userstory3.html>Tracy</a>  </h3>
+                    </div> 
+                    <div class="features-item"> 
+                        <img src="images/jack.jpg" alt="Jack Picture">
+                        <h3> <a href= user_stories/_userstory4.html>Jack</a>  </h3>
+                    </div> 
             </div>
         </section>
 
@@ -119,39 +178,24 @@
                 <h2>Scenarios</h2>
                 <div class = "features-grid">
                     <div class="features-item"> 
-                        <h3> <a href= scenarios/_scenario1.html>Scenarios - Bronwyn</a>  </h3>
+                        <img src="images/brownyn.jpg" alt="Bronwyn Picture">
+                        <h3> <a href= scenarios/_scenario1.html>Bronwyn</a>  </h3>
                     </div> 
                     <div class="features-item"> 
-                        <h3> <a href= scenarios/_scenario2.html>Scenarios - Shannon</a>  </h3>
+                        <img src="images/shannon.jpg" alt="Shannon Picture">
+                        <h3> <a href= scenarios/_scenario2.html>Shannon</a>  </h3>
                     </div> 
                     <div class="features-item"> 
-                        <h3> <a href= scenarios/_scenario3.html>Scenarios - Tracy</a>  </h3>
+                        <img src="images/tracy.jpg" alt="Tracy Picture">
+                        <h3> <a href= scenarios/_scenario3.html>Tracy</a>  </h3>
                     </div> 
                     <div class="features-item"> 
-                        <h3> <a href= scenarios/_scenario4.html>Scenarios - Jack</a>  </h3>
+                        <img src="images/jack.jpg" alt="Jack Picture">
+                        <h3> <a href= scenarios/_scenario4.html>Jack</a>  </h3>
                     </div> 
             </div>
          </section>
 
-        <!-- User Stories Section -->
-        <section id = "userstories" class = "userstories">
-            <div class = "container">
-                <h2>User Stories</h2>
-                <div class = "features-grid">
-                    <div class="features-item"> 
-                        <h3> <a href= user_stories/_userstory1.html>User Story 1</a>  </h3>
-                    </div> 
-                    <div class="features-item"> 
-                        <h3> <a href= user_stories/_userstory2.html>User Story 2</a>  </h3>
-                    </div> 
-                    <div class="features-item"> 
-                        <h3> <a href= user_stories/_userstory3.html>User Story 3</a>  </h3>
-                    </div> 
-                    <div class="features-item"> 
-                        <h3> <a href= user_stories/_userstory4.html>User Story 4</a>  </h3>
-                    </div> 
-            </div>
-        </section>
 
         <!-- Features Section -->
         <section id = "features" class = "features">
@@ -164,19 +208,12 @@
                 </div>
         </section>
 
-        <!-- Video Section -->
-         <section id = "video" class = "video">
-            <div class = "container">
-                 <p><a href = "https://video.bellarmine.edu/media/t/1_1wbwbmxh" target="blank">Click here</a> to learn more about the product!</p>
-            </div>
-         </section>
-
         <!-- Footer Section -->
-         <footer class = "footer">
+        <section id =  "footer" class="footer">
             <!-- Link to JavaScript if we chose to add it-->
             <div class = "container">
                 <p>Play It Forward: Kory Ripperda and Megan Cole</p>
             </div>
-         </footer>
+         </section>
     </body>
 </html>
