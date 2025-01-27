@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="architecture_styles.css">
+</head>
+<body>
+        <!-- Header Section -->
+        <header class="header">
+            <h1> Play It Forward </h1>
+                <!-- Slogan ideas: "Sharing the Joy of Play, One Toy at a Time" or "Reduce, Reuse, Playtime"-->
+                <p class = "slogan">Sharing the Joy of Play, One Toy at a Time</p>
+                <!-- Button linked to take user to the features and benefits of Play It Forward -->
+                <a href= "index.html" class="cta-button"> Return Home </a>
+         </header>
+         
+         <!-- Menu Bar -->
+         <nav class="menu">
+            <a href="C:\Users\li915d\Documents\Bellarmine\CS400\CS400 Project\images\index.html">Home</a>
+            <a href="C:\Users\li915d\Documents\Bellarmine\CS400\CS400 Project\images\design_artifacts.html">Design Artifacts</a>
+            <a href="#personas">Perspective Users</a>
+            <a href="#interviews">Interviews</a>
+            <a href="#userstories">User Stories</a>
+            <a href="#scenarios">Scenarios</a>
+            <a href="#features">Features</a>
+        </nav>
+
+        <!-- About Section -->
+        <section id = "about" class = "about">
+            <div class = "container">
+                <div class = "about-grid">
+                    <div class = "about-info">
+                        <h2> About Our Product </h2>
+                        <!-- Design Artifacts Overview -->
+                        <p class = "description"> 
+                            Design Artifacts play an important part of designing software products that best fit the needs of our users. 
+                            Please watch our video for an overview of the important design artifacts discussed on this page.
+                        </p>
+                    </div>
+                    <div class = "logo">
+                        <img src = "C:\Users\li915d\Documents\Bellarmine\CS400\CS400 Project\images\logo.jpeg" alt="Play It Forward Logo">
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!---Architecture Section-->
+        <section id = "about" class = "about">
+        <div class = "container">
+            <div class = "about-grid">
+                <div class = "about-info">
+                    <h2> Proposed Architecture </h2>
+                    <!--Architecture Overview-->
+                    <p class = "description">
+                        The simplest set up for our application is a three-tier architecture.<br>
+                        In the client layer, the front-end is the web browser or mobile application used by the end user. <br>
+                        The middle layer will house the server which communicates between the application and the database and perform the data pull 
+                        return to the end user.<br>
+                        The third layer is the data tier that stores and manages the data such as a NoSQL database. This tier will 
+                        host the pictures, descriptions, and information of the users looking to donate or receive donations.<br>
+                        This architecture is especially beneficial for a large number of users for specific locations.<br>
+                    </p>
+                </div>
+                    <div class = "logo">
+                        <img src = "architecture_images/Three-Tier.png" alt="Three-Tier Architecture">
+                    </div>
+            </div>
+        </div>
+        </section>
+        <!---Tiers Section-->        
+        <section id = "features" class = "features">
+            <div class="container">
+                <h2>Tiers</h2>
+                <div class = "features-grid">
+                    <div class="features-item"> 
+                        <h3> Client/Application Tier </h3>
+                            <img src = "architecture_images/client.png" alt="User">
+                            <p> Web browser <br>
+                                Application <br>
+                                Catalog management <br>
+                                Communication functionality <br>
+                                User authentication <br>
+                            </p>
+                            <h3> <a href= user_interface.html>User Interface</a>  </h3>
+                    </div> 
+                    <div class = "features-item" >
+                        <h3> Web Server Tier </h3>
+                            <img src = "architecture_images/server.webp" alt="Server">
+                            <p> Handles HTTP requests from clients <br>
+                                Communicate between client and database <br>
+                                Reverse proxy server provides security and load balancing <br>
+                                Utilize web server such as Apache <br>   
+                            </p>
+                            <h3> <a href= back_end.html>Back End</a>  </h3>
+                    </div>
+                    <div class = "features-item">
+                        <h3> Database Tier </h3>
+                            <img src = "architecture_images/database.png" alt="Database">
+                            <p> Store and manage data inputs <br>
+                                NoSQL database for anticipated big data storage <br>
+                                Data analytics to verify users <br>
+                            </p>
+                            <h3> <a href= database.html>Storage</a>  </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Design Considerations-->
+        <section id = "about" class = "about">
+        <div class = "container">
+            <div class = "about-grid">
+                <div class = "about-info">
+                    <h2> Design Considerations </h2>
+                    <!--Design Considerations Overview-->
+                    <p class = "description">
+                        <h4>Scalability Challenges - Anticipated upgrades in subsequent versions</h4>
+                        <h4>Higher Costs - Additional costs for development, deployment, and maintenance for added layer</h4>
+                        <h4>Complex Maintenance and Upgrades - Time consuming upgrades to increase scalability with adjustments across multiple layers</h4>                
+                        <h4>Increase Latency - Additional processing steps in handling requests can lead to slower response times</h4>                       
+                        <h3>Separation of Concerns</h3>
+                        Remove currency and transaction aspect and focus solely on donations<br>
+                        Locations limited to 50 miles of user locations<br>
+                        Reuse framework for each and every listings (minimum 2 photos)<br>
+                        Simple user interface with primary focus on messaging between users
+                        <h3>Cross-Cutting Concerns</h3>
+                        Record every action a verified user performs<br>
+                        Check user permissions before accessing resources<br>
+                        Handle errors that may occur<br>
+                        Monitor performance of servers and databases<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section id =  "footer" class="footer">
+            <!-- Link to JavaScript if we chose to add it-->
+            <div class = "container">
+                <p>Play It Forward: Kory Ripperda and Megan Cole</p>
+            </div>
+         </section>
+    </body>
+</html>
