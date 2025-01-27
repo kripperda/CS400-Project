@@ -1,0 +1,158 @@
+/* General Styling*/
+body{
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Container formating */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Menu Styles */
+.menu {
+    display: flex; 
+    justify-content: center;
+    gap: 2.0rem; 
+    background-color: lightgray; 
+    border-bottom: 1px lightgray; 
+  }
+
+  /* Link Styles */
+.menu a {
+    text-decoration: none; 
+    color: blue; 
+  }
+  
+  /* Hover Effect for Links */
+  .menu a:hover {
+    background-color: blue; 
+    color: red; 
+  }
+
+/* Header Section*/
+.header{
+    background: linear-gradient(to right, red, blue);
+    color: white;
+    text-align: center;
+    padding:3rem 1rem;
+}
+
+/* Text Sizes for header*/
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header .slogan {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* Button from header to design artifacts */
+.cta-button{
+    background: whitesmoke;
+    color: blue;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover{
+    background: red;
+    color: white;
+}
+
+/* About Section*/
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin-top: 5.0rem;
+}
+
+/* Styling Sections*/
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+/*Features Section*/
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30 px;
+    margin-top: 2rem;
+}
+
+.features-item{
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.features img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /*margin-bottom: 0.5rem;*/
+}
+
+/* Team Section*/
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+/*team member images*/
+.team-member img{
+    width: 185px;
+    height: 150px;
+    border-radius: 50%;
+    /*margin-bottom: 0.5rem;*/
+}
+
+/* Video Section */
+.product-pitch img{
+    width: 400px;
+    height: 300px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, red, blue);
+    color: white;
+    text-align: center;
+    padding: 1 rem 0;
+}
+
+/* Buttons outside of header*/
+.cta-body-button{
+    background: blue;
+    color: whitesmoke;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-body-button:hover{
+    background: red;
+    color: white;
+}
