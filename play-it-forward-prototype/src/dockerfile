@@ -1,0 +1,18 @@
+FROM node:18-alpine
+
+#Create router directory
+WORKDIR /router
+
+#Install app dependencies
+COPY listings*.json ./
+
+#Run npm install
+RUN npm install
+
+#Bundles app source
+COPY . . 
+
+EXPOSE 8080
+
+CMD [ "npm", "start"]
+
