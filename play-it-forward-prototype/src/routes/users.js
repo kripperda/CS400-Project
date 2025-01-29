@@ -2,7 +2,7 @@ import express from "express";
 
 const PORT = process.env.PORT || 8080;
 const express = require("express");
-const router = express();
+const router = express.Router();
 
 let interestRequests = []; // Temporary in-memory storage
 
