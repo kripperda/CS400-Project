@@ -12,7 +12,7 @@ RUN npm install
 #Bundles app source
 COPY . . 
 
-EXPOSE 8080
+EXPOSE 3000
 
-CMD [ "npm", "start"]
+CMD [ "listings.js", "users.js", "server.js", "filters.js" ]
 
