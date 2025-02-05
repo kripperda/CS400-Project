@@ -35,6 +35,35 @@ Used toy exchange and donation application
 
 Play It Forward seeks to make sure all children have the appropriate toys to foster learning throughout childhood. Play It Forward seeks to unite those wishing to get rid of toys their children have grown out of with those seeking to find new toys for their younger children to play with. All toys listed are in usable condition with plenty of life and love left in them. Play It Forward focuses on toys played with and loved by younger ages with a primary focus on learning-type toys to provide educational opportunities for those who may not have as many toys intended for learning. Play It Forward also will lean on non-profit organizations - as donatees and donators - to help fill the gaps of toys needing to be properly placed. 
 
+**How To Use the Landing Page**
+
+The landing page consists of descriptions, examples, and videos to provide a better understanding of our product. Here is what you can expect to see on each html page:
+
+index.html:
+	- About our product section.
+ 	- Features and benefits.
+  	- Vision statement. 
+   	- Link to perspective customers, user stories, personas, etc. (design_artifacts.html). 
+    	- Meet Our Team
+     	- Product Pitch (Video Link)
+      	- Link to product architecture (architecture.html). 
+       	- Prototype Overview (Video Link). 
+
+design_artifacts.html:
+	- Link to artifacts overview video.
+ 	- Personas.
+  	- Interviews.
+   	- User Stories.
+    	- Scenarios.
+     	- Features.
+
+ architecture.html:
+ 	- Proposed Architecture Overview.
+  	- Tiers: Client/Application Tier, Web Server Tier, Database Tier.
+   	- Design Considerations.
+    	- Seperation of Concerns. 
+     	- Cross-Cutting Concerns. 
+
 **Project Structure**
 
 	**Getting Started**
